@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <h1>THis is root app HTML content</h1> -->
+  
+<!-- <p>{{varfromctoparent}}</p> -->
+
+<!-- <p>{{varOutputFromChildToParent}}</p>
+
+  <app-login [varpc] = "title" (messageEvent) = "receiveMessage($event)"> </app-login> -->
+  
+  <!-- <app-practice></app-practice> -->
+
+  <!-- <app-reactive></app-reactive> -->
+  
+
+  
+  <!-- <p>this is written in app.component.html</p> -->
+  <!-- <button type="button">Button</button> -->
+  <h1>Hi i am in Home</h1>
+  <!-- <app-task></app-task> -->
+  <!-- <button [router-link]="/task">Child component</button> -->
+  <button [routerLink]="['/task']" routerLinkActive="mkc">Show Task</button>
+  <button [routerLink]="['/movie']" routerLinkActive="mkc">Show Movies</button>
+  <button [routerLink]="['/post']" routerLinkActive="mkc" >Post</button>
+  <button [routerLink]="['/']" routerLinkActive="home">Home</button>
+  
+  <!-- <a [routerLink]="['/post']" routerLinkActive="router-link-active"> this is second option</a><br>
+  <a href="/post">this is third</a> -->
+  <!-- <app-query-params></app-query-params> -->
+  <button (click)="onSubmit()">Dynamic Route</button>
+  <router-outlet></router-outlet>
+  <!-- <app-post-list></app-post-list> -->
+
+  <!-- <app-observable></app-observable> -->
+  
+</body>
+</html>

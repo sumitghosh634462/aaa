@@ -1,0 +1,91 @@
+<!-- <p>login worked for me!</p> -->
+
+
+<!-- -------------------------Property Binding----------------------- -->
+
+<!-- <h2>{{title}}</h2> -->
+<!-- ----------------------------Interpolation(String Interpolztion)-------------------- -->
+<!-- <h3>{{num}}</h3>
+<br><br> -->
+
+<!-- <p>{{varpc}}</p>
+<br> -->
+
+<!-- <ul>
+<li>{{names[0]}}</li>
+<li>{{names[1]}}</li>
+<li>{{names[2]}}</li>
+<li>{{names[3]}}</li>
+</ul> -->
+
+<!-- <ul>
+    <h2>New List</h2>
+    <li *ngFor = "let n of names">{{n}}</li>
+</ul> -->
+
+
+
+<!-- <div *ngIf = "objArray.length > 0; else nodata">
+<ul>
+    <h2>New List</h2>
+    <li *ngFor = "let x of objArray">{{x | json}}</li>
+</ul>
+</div>
+
+<ng-template #nodata>
+There are no object
+</ng-template> -->
+<h1
+[style.color] = "isAvailable ? 'red' : 'blue'"
+[style.textTransform] = "isAvailable ? 'uppercase' : 'lowercase'">
+hiii hello are you there?
+</h1>
+
+<div [ngSwitch]="message">
+    <div *ngSwitchCase="'this is from first form'">form 1 aaa geya</div>
+    <div *ngSwitchCase="'this is from second form'">form 2 bhi aaa geyaa</div>
+    <div *ngSwitchCase="'this is from third form'">form 3 bhii ataa rehegaaa</div>
+    <div *ngSwitchDefault>koi data nhi hai</div>
+</div>
+
+<!-- <div *ngIf="message == 'this is from first form'">
+    form 1 aaa geya
+</div>
+
+<div *ngIf = "message == 'this is from second form'">
+    form 2 bhi aaa geyaa
+</div>
+
+<div *ngIf="message == 'this is from third form'">
+    form 3 bhii ataa rehegaaa
+</div> -->
+
+
+
+<button (click) = 'form1("this is from first form")'>Form1</button>
+<button (click) = 'form1("this is from second form")'>Form2</button>
+<button (click) = 'form1("this is from third form")'>Form3</button>
+
+
+<!-- <button (click) = 'sendMessage()'>Send</button>
+<br>
+<br> -->
+
+<!-- <img src="{{imageUrl}}" alt="image load ho raha hai"><br>
+<img [src]="imageUrl" alt="aa raha hai"> -->
+
+<!-- <h1 class="colorred">hey i am here</h1>
+<h1 [style.color]="changecolor ? 'red' : 'green'">this have to change the color</h1>
+<h1 [class]="changecolor ? 'bluecolor' : 'randomcolor'">this is by class selector</h1>
+<button (click)="buttonClick()">Click Here</button>
+
+<input type="text" (keyup)="onKeyUp($event)"><br>
+
+<input type="text" (keyup.enter)="onKeyUpHappen()"><br>
+
+<input type="text" (keyup.enter)="onKeyUpInput(input.value)" #input>
+<!-- <input input = "text" (keyup) = "onKeyUp"> -->
+
+<!-- <button (click)="buttonC()">Button</button>
+<input type="text" [value]="onewaydata" (keyup.enter)="onKeyButton()">
+<input type="text" [(ngModel)]="onewaydata" (keyup.enter)="onKeyButton()">  -->

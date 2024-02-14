@@ -1,0 +1,8 @@
+<p>movie works!</p>
+<ol>
+    <div *ngFor="let item of movieNames;let i=index">
+        {{item.name}}
+        <button [routerLink]="['/movie',i]">Id</button>
+        <button [routerLink]="['/movie',i,item.name]">More</button>
+    </div>
+</ol>

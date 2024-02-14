@@ -1,0 +1,8 @@
+<p>post-list works!</p>
+
+
+<p *ngFor="let post of posts">
+    <li>{{post.postTitle}}</li>
+</p>
+
+<button (click)="onAdd()">Add Post </button>

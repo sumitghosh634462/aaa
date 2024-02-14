@@ -1,0 +1,15 @@
+<p>task works!</p>
+<p>This is task.component.html</p>
+<!-- <form>
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="pwd">Password:</label><br>
+    <input type="password" id="pwd" name="pwd">
+  </form> -->
+<br>
+<br>
+  <li *ngFor="let item of employees">
+    <div>
+        Name : {{ item.name | uppercase}}
+    </div>
+</li>
